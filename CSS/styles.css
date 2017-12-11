@@ -1,36 +1,68 @@
 /* CSS global style for Desktop, and Mobile first */
 
-/*First breakpoint  (mobile size) */
+  body{
+
+  }
+
+  header{
+
+  }
+
+  nav{
+
+  }
+
+  ul{
+
+  }
+
+  li{
+
+  }
+
+  li:hover{
+
+  }
+
+  main{
+
+  }
+
+  section{
+
+}
+
+/*First breakpoint  (Medium/ Tablet size size) */
 @media screen and (min-width: 500px) {
-  .body{
+  body{
 
   }
 
-  .header{
+  header{
 
   }
 
-  .nav{
+  nav{
 
   }
 
-  .ul{
+  ul{
 
   }
 
-  .li{
+  li{
 
   }
 
-  .li:hover{
+  li:hover{
 
   }
 
-  .main{
+  main{
 
   }
 
-  .section{
+  section{
 
   }
 
@@ -38,80 +70,46 @@
 /*End of first breakpoint */
 
 
-/*Start Of second breakpoint (Tablet Size) */
-@media screen and (min-wdith: 1000px) {
-  .body{
+/*Start Of second breakpoint (Desktop Size) */
+@media screen and (min-width: 1000px) {
+  body{
+    background-color: grey;
+  }
+
+  header{
+    background-image: url("forest.jpg");
 
   }
 
-  .header{
+  nav{
+    margin: auto;
+    padding: 0 10 0 10;
+  }
+
+  ul{
+    text-decoration: none;
+  }
+
+  li{
+  font-size: 2em;
+  text-decoration: none;
+  color: red;
+  }
+
+  li:hover{
 
   }
 
-  .nav{
+  main{
 
   }
 
-  .ul{
-
-  }
-
-  .li{
-
-  }
-
-  .li:hover{
-
-  }
-
-  .main{
-
-  }
-
-  .section{
+  section{
 
   }
 
 }
 /*End of second breakpoint */
 
-/*Start of final breakpoint for desktop screen sizes*/
-@media screen and (min-width: 1280px) {
-  .body{
-    background: red;
-  }
 
-  .header{
-    background-image: url("forest.jpg");
-
-  }
-
-  .nav{
-    margin: auto;
-    padding: 0 10 0 10;
-  }
-
-  .ul{
-    text-decoration: none;
-  }
-
-  .li{
-  font-size: 2em;
-  text-decoration: none;
-  color: red;
-  }
-
-  .li:hover{
-
-  }
-
-  .main{
-
-  }
-
-  .section{
-
-  }
-
-}
 /*End of CSS file */
