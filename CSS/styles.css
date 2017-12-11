@@ -39,7 +39,7 @@
 
 
 /*Start Of second breakpoint (Tablet Size) */
-@media screen and (mind-wdith: 1000px) {
+@media screen and (min-wdith: 1000px) {
   .body{
 
   }
@@ -82,7 +82,7 @@
   }
 
   .header{
-    background-image: image("images\Autum Forest.jpg");
+    background-image: image("images/Autum Forest.jpg");
 
   }
 
