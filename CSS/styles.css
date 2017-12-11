@@ -79,7 +79,6 @@
 @media screen and (min-width: 1280px) {
   .body{
     background: red;
-
   }
 
   .header{
@@ -91,11 +90,11 @@
   }
 
   .ul{
-
+    text-decoration: none;
   }
 
   .li{
-
+  font-size: 2em;
   }
 
   .li:hover{
