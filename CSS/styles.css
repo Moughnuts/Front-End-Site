@@ -95,6 +95,8 @@
 
   .li{
   font-size: 2em;
+  text-decoration: none;
+  color: red;
   }
 
   .li:hover{
