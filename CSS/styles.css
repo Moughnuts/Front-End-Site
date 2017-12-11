@@ -1,0 +1,113 @@
+/* CSS global style for Desktop, and Mobile first */
+
+/*First breakpoint  (mobile size) */
+@media screen and (min-width: 500px) {
+  .body{
+
+  }
+
+  .header{
+
+  }
+
+  .nav{
+
+  }
+
+  .ul{
+
+  }
+
+  .li{
+
+  }
+
+  .li:hover{
+
+  }
+
+  .main{
+
+  }
+
+  .section{
+
+  }
+
+}
+/*End of first breakpoint */
+
+
+/*Start Of second breakpoint (Tablet Size) */
+@media screen and (mind-wdith: 1000px) {
+  .body{
+
+  }
+
+  .header{
+
+  }
+
+  .nav{
+
+  }
+
+  .ul{
+
+  }
+
+  .li{
+
+  }
+
+  .li:hover{
+
+  }
+
+  .main{
+
+  }
+
+  .section{
+
+  }
+
+}
+/*End of second breakpoint */
+
+/*Start of final breakpoint for desktop screen sizes*/
+@media screen and (min-width: 1280px) {
+  .body{
+
+  }
+
+  .header{
+
+  }
+
+  .nav{
+
+  }
+
+  .ul{
+
+  }
+
+  .li{
+
+  }
+
+  .li:hover{
+
+  }
+
+  .main{
+
+  }
+
+  .section{
+
+  }
+
+}
+/*End of CSS file */
