@@ -1,69 +1,103 @@
 /* CSS global style for Desktop, and Mobile first */
 
-  body{
+body{
+  margin: 0;
+  padding: 0;
+}
 
-  }
+header {
+  text-align: center;
+  background-image: url(../images/forest.jpg);
+  width: 100%;
+}
 
-  header{
+ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
 
-  }
+li{
+  width: 100%;
+}
 
-  nav{
+li a{
+  text-decoration: none;
+  display: block;
+  font-size: 2em;
+  color: red;
+  padding: 5%;
+  text-align: center;
+}
 
-  }
+li a:hover{
+  background: grey;
 
-  ul{
+}
 
-  }
+.hero{
+  /*display: block;*/
+  margin: 0;
+  padding: 0;
+}
 
-  li{
-
-  }
-
-  li:hover{
-
-  }
-
-  main{
-
-  }
-
-  section{
-
+.profile{
+  display: block;
+  margin: 0;
+  padding: 15% 34%;
+  background-color: rgba(30, 30, 30, 0.5);
 }
 
 /*First breakpoint  (Medium/ Tablet size size) */
 @media screen and (min-width: 500px) {
   body{
-
+    margin: 0;
+    padding: 0;
   }
 
-  header{
-
-  }
-
-  nav{
-
+  header {
+    text-align: center;
+    background-image: url(../images/forest.jpg);
   }
 
   ul{
-
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
   }
 
   li{
+    float: left;
+    width: 25%;
+  }
+
+  li a{
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-size: 2em;
+    color: red;
+    padding: 5%;
+  }
+
+  li a:hover{
+    background: grey;
 
   }
 
-  li:hover{
-
+  .hero{
+    display: block;
+    margin: 0;
+    padding: 0;
   }
 
-  main{
-
-  }
-
-  section{
-
+  .profile{
+    display: block;
+    margin: 0;
+    padding: 15% 45% 15% 45%;
+    background-color: rgba(30, 30, 30, 0.5);
   }
 
 }
@@ -73,39 +107,51 @@
 /*Start Of second breakpoint (Desktop Size) */
 @media screen and (min-width: 1000px) {
   body{
-    background-color: grey;
+    margin: 0;
+    padding: 0;
   }
 
-  header{
-    background-image: url("forest.jpg");
-
-  }
-
-  nav{
-    margin: auto;
-    padding: 0 10 0 10;
+  header {
+    text-align: center;
+    background-image: url(../images/forest.jpg);
   }
 
   ul{
-    text-decoration: none;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
   }
 
   li{
-  font-size: 2em;
-  text-decoration: none;
-  color: red;
+    float: left;
+    width: 25%;
   }
 
-  li:hover{
+  li a{
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-size: 2em;
+    color: red;
+    padding: 5%;
+  }
+
+  li a:hover{
+    background: grey;
 
   }
 
-  main{
-
+  .hero{
+    display: block;
+    margin: 0;
+    padding: 0;
   }
 
-  section{
-
+  .profile{
+    margin: 0;
+    padding: 15% 45% 15% 45%;
+    background-color: rgba(30, 30, 30, 0.5);
   }
 
 }
