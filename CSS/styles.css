@@ -78,6 +78,7 @@
 /*Start of final breakpoint for desktop screen sizes*/
 @media screen and (min-width: 1280px) {
   .body{
+    background: red;
 
   }
 
