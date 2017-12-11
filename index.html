@@ -15,7 +15,33 @@
         <img class="profile" src="images\Stache.jpg" alt="Profile_Pic">
     </header>
 
-    <nav>
+<div class="mobile">
+  <div id="myNav" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <ul class="overlay-content">
+    <li><a href="#">Link1</a></li>
+    <li><a href="#">link2</a></li>
+    <li><a href="#">link3</a></li>
+    <li><a href="#">link4</a></li>
+  </ul>
+</div>
+
+<span class="mobile "style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+
+<!-- <script src="js/script.js"> </script> -->
+
+<script>
+function openNav() {
+    document.getElementById("myNav").style.width = "90%";
+}
+
+function closeNav() {
+    document.getElementById("myNav").style.width = "0%";
+}
+</script>
+</div>
+
+    <nav class="desktop">
       <ul>
         <li><a href="#">Home!</a></li>
         <li><a href="#">About Me!</a></li>
