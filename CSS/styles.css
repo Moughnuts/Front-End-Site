@@ -24,9 +24,17 @@ ul{
   background-color: rgba(30, 30, 30, 0.5);
 }
 
+@keyframes profin {
+  from {bottom: -500px; opacity: 0;}
+  to {bottom: 0px; opacity: 1;}
+}
+
 .profile{
   display: inline;
   margin: 15% 0;
+  animation-name: profin;
+  animation-duration: 4s;
+  animation-timing-function: ease;
 }
 
 .overlay {
@@ -63,12 +71,20 @@ ul{
     color: #f1f1f1;
 }
 
+@keyframes spinner {
+  from {left: 0%; transform: rotate(0deg);}
+  to {left: 70%; transform: rotate(180deg);}
+}
+
 .overlay .closebtn {
     position: absolute;
     top: -50%;
     left: 70%;
     font-size: 60px;
     cursor: pointer;
+    animation-name: spinner;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-in;
 }
 
 .mobNav{
@@ -79,6 +95,11 @@ ul{
   color: rgba(66, 244, 197, 0.55);
   border-bottom: 1px solid grey;
   border-right: 1px solid grey;
+  transition: color 2s ease-out;
+}
+
+.mobNav:hover{
+  color: white;
 }
 
 .desktop{
@@ -133,6 +154,10 @@ ul{
   .profile{
     display: inline;
     margin: 15% 0;
+  }
+
+  .overlay{
+    display: none;
   }
 
   .mobNav{
