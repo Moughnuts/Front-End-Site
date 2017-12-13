@@ -7,7 +7,8 @@ body{
 
 header {
   text-align: center;
-  background-image: url(../images/forest.jpg);
+  background: url(../images/explodyseacolours.jpg) no-repeat;
+  background-size: auto;
   width: 100%;
 }
 
@@ -19,16 +20,13 @@ ul{
 }
 
 .hero{
-  /*display: block;*/
-  margin: 0;
-  padding: 0;
+  width: 100%;
+  background-color: rgba(30, 30, 30, 0.5);
 }
 
 .profile{
-  display: block;
-  margin: 0;
-  padding: 15% 34%;
-  background-color: rgba(30, 30, 30, 0.5);
+  display: inline;
+  margin: 15% 0;
 }
 
 .overlay {
@@ -49,7 +47,7 @@ ul{
     top: 25%;
     width: 100%;
     text-align: center;
-    margin-top: 30px;
+    /*margin-top: 30px;*/
 }
 
 .overlay a {
@@ -67,13 +65,24 @@ ul{
 
 .overlay .closebtn {
     position: absolute;
-    top: 20px;
-    right: 45px;
+    top: -50%;
+    left: 70%;
     font-size: 60px;
+    cursor: pointer;
+}
+
+.mobNav{
+  display: inline-block;
+  padding: 2% 20%;
+  font-size:4em;
+  cursor:pointer;
+  color: rgba(66, 244, 197, 0.55);
+  border-bottom: 1px solid grey;
+  border-right: 1px solid grey;
 }
 
 .desktop{
-  visibility: hidden;
+  display: none;
 }
 
 /*First breakpoint  (Medium/ Tablet size size) */
@@ -85,7 +94,9 @@ ul{
 
   header {
     text-align: center;
-    background-image: url(../images/forest.jpg);
+    background: url(../images/explodyseacolours.jpg) no-repeat;
+    background-size: auto;
+    width: 100%;
   }
 
   ul{
@@ -115,24 +126,21 @@ ul{
   }
 
   .hero{
-    display: block;
-    margin: 0;
-    padding: 0;
-  }
-
-  .profile{
-    display: block;
-    margin: 0;
-    padding: 15% 45% 15% 45%;
+    width: 100%;
     background-color: rgba(30, 30, 30, 0.5);
   }
 
-  .mobile{
-    visibility: hidden;
+  .profile{
+    display: inline;
+    margin: 15% 0;
+  }
+
+  .mobNav{
+    display: none;
   }
 
   .desktop{
-    visibility: visible;
+    display: block;
   }
 
 }
@@ -148,7 +156,9 @@ ul{
 
   header {
     text-align: center;
-    background-image: url(../images/forest.jpg);
+    background: url(../images/explodyseacolours.jpg) no-repeat;
+    background-size: auto;
+    width: 100%;
   }
 
   ul{
@@ -172,21 +182,18 @@ ul{
     padding: 5%;
   }
 
-  li a:hover{
+  li a:hover, a:active{
     background: grey;
-
   }
 
   .hero{
-    display: block;
-    margin: 0;
-    padding: 0;
+    width: 100%;
+    background-color: rgba(30, 30, 30, 0.5);
   }
 
   .profile{
-    margin: 0;
-    padding: 15% 45% 15% 45%;
-    background-color: rgba(30, 30, 30, 0.5);
+    display: inline;
+    margin: 15% 0;
   }
 
 }
