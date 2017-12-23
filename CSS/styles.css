@@ -280,6 +280,7 @@ ul{
     animation-name: fade;
     animation-duration: 2s;
     animation-timing-function: ease;
+    font-family: 'PT Sans', sans-serif;
   }
 
   .dev {
@@ -287,6 +288,7 @@ ul{
     animation-name: fade;
     animation-duration: 2.5s;
     animation-timing-function: ease;
+    font-family: 'PT Sans', sans-serif;
   }
 
   .compsci {
@@ -294,6 +296,7 @@ ul{
     animation-name: fade;
     animation-duration: 3s;
     animation-timing-function: ease;
+    font-family: 'PT Sans', sans-serif;
   }
 
   @keyframes fade {
@@ -314,6 +317,20 @@ ul{
     bottom: 10px;
     left: 50%;
     z-index: 2;
+    animation-name: scrldw;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+  }
+
+  @keyframes scrldw {
+    0% {
+      opacity: 0;
+      transform: translate(0, -20%);
+    }
+    100% {
+      opacity: 1;
+      transform: translate(0, 0%);
+    }
   }
 
   .home a {
@@ -321,17 +338,19 @@ ul{
     color: white;
     text-decoration: none;
     style: none;
+    font-family: 'PT Sans', sans-serif;
   }
 
   .home a:hover, a:active {
     background: none;
+    animation-iteration-count: infinite;
   }
 
   #about {
     padding-top: 3%;
     text-align: center;
     padding-bottom: 5%;
-    background-color: rgba(0, 0, 0, 0.9);
+    background-color: rgba(0, 0, 0, 0.75);
   }
 
   .prof {
