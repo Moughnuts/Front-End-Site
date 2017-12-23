@@ -6,7 +6,9 @@
 
     <title>Mo Portfolio</title>
 
+    <script defer src="https://use.fontawesome.com/releases/v5.0.2/js/all.js"></script>
     <link rel="stylesheet" href="CSS/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
 
   </head>
   <body>
@@ -15,14 +17,18 @@
       <!-- <div class="hero">
         <img class="profile" src="images\Stache.jpg" alt="Profile_Pic">
       </div> -->
+
       <nav class="desktop">
         <ul>
-          <li><a href="#">Home!</a></li>
-          <li><a href="#">About Me!</a></li>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About Me</a></li>
           <li><a href="#">Portfolio</a></li>
           <li><a href="#">Online CV</a> </li>
+          <a href="#"> <img class="logo" src="images\logo1.png" alt="Page Logo"></a>
         </ul>
       </nav>
+
+
     </header>
 
 
@@ -45,17 +51,53 @@
     <main>
 
         <section class="home">
-          <h1>Designer /</h1>
-          <h1 class="dev">Developer /</h1>
-          <h1 class="compsci">Computer Scientist.</h1>
+          <div id="particles-js"></div>
+          <div class="intro">
+            <h1 class="des">Designer /</h1>
+            <h1 class="dev">Developer /</h1>
+            <h1 class="compsci">Computer Scientist.</h1>
+          </div>
+          <div class="scroll">
+            <a href="#about">
+              <i class="fas fa-angle-down"></i>
+              <span> Scroll </span>
+            </a>
+          </div>
+
+          <script type="text/javascript" src="scripts/particles.js-master/particles.js"></script>
+          <script type="text/javascript"src="scripts/particles.js-master/demo/js/app.js"></script>
 
         </section>
 
-        <section>
+        <section id="about">
+          <img class="prof" src="images\prof.png" alt="Mo Profile Pic">
+          <article class="abtme">
+            <h1>About Me!</h1>
 
-        </section>
+            <p>Hello and welcome to my portfolio website! My (legal) name is Muraz
+              Maudarbux, but I mostly go by Mo. This site was initally created
+              as part of my final year 'Front End Web Development' assignment,
+              and I decided that this would be a great opportunity to create a
+              great portfolio website, to showcase all my work, interests and
+              creative style.</p>
 
-        <section>
+            <p>I'm currently a final year student studying at Computer Science at
+              De Montfort University. This website will be used as an assignment
+              for one of my final year modules, but I hope to continue using this
+              site in the future, and develop and change it as I Design, Develop
+              and get more experience in the industry. I also hope to update the
+              site as industry standards change to keep up with the world of web
+              Design.</p>
+
+            <p>The menu above will take you to the other pages of this one page
+              site, that changes the content with JS. You'll be able to view my
+              work as well as my CV and links to my social media such as Facebook,
+              Twitter, Linked In, and even a link to my GitHub repositories! (Hint
+              these can be found by clicking the logo, top right ;P ).</p>
+
+            <p>I hope you enjoy the site, and if you have any queries (Or job offers)
+              feel free to contact me through the contact form!</p>
+          </article>
 
         </section>
 
