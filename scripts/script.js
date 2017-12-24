@@ -1,13 +1,27 @@
-document.getElementById('open').addEventListener('click', openNav);
+let menu = document.getElementById("open");
+let nav = document.getElementById("mobile");
+let closeNav = document.getElementById("close");
 
-function openNav() {
-    document.getElementById("mobile").style.width = "100%";
+menu.addEventListener("click", togglemenu);
+closeNav.addEventListener("click", toggleback);
+
+let toggle = false;
+function togglemenu() {
+  if (toggle) {
+    nav.classList.remove("show"),
+    toggle = false;
+  }
+  else {
+    nav.classList.add("show"),
+    toggle = true
+  }
 }
 
-document.getElementById('close').addEventListener('click', closeNav);
-
-function closeNav() {
-    document.getElementById("mobile").style.width = "0%";
+function toggleback() {
+  if (toggle) {
+    nav.classList.remove("show"),
+    toggle = false;
+  }
 }
 
 
