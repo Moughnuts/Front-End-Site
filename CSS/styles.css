@@ -1,113 +1,288 @@
 /* CSS global style for Desktop, and Mobile first */
-
-body{
+body {
   margin: 0;
   padding: 0;
+  background: linear-gradient(210deg, #2bac8b, #d220a4);
+  background-size: 600% 600%;
 }
 
 header {
-  width: 100%;
-}
-
-/* header {
-  text-align: center;
-  background: url(../images/explodyseacolours.jpg) no-repeat;
-  background-size: auto;
-  width: 100%;
-} */
-
-ul{
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-bottom: 1px solid rgba(203, 172, 98, 0.3);
   overflow: hidden;
 }
 
-.hero{
+nav {
+  margin: auto;
   width: 100%;
-  background-color: rgba(30, 30, 30, 0.5);
+  clear: both;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
-@keyframes profin {
-  from {bottom: -500px; opacity: 0;}
-  to {bottom: 0px; opacity: 1;}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
 }
 
-.profile{
+li {
+  float: left;
+  width: 15%;
+}
+
+li a {
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  font-size: 1em;
+  color: white;
+  padding: 9%;
+  font-family: 'PT Sans', sans-serif;
+}
+
+li a:hover, a:active {
+  background: grey;
+}
+
+.logo {
+  display: inline-block;
+  white-space: nowrap;
+  padding: 1px;
+  float: right;
+  opacity: 0.8;
+  overflow: hidden;
+}
+
+.profile {
   display: inline;
   margin: 15% 0;
-  animation-name: profin;
-  animation-duration: 4s;
-  animation-timing-function: ease;
 }
 
 .overlay {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: rgb(0,0,0);
-    background-color: rgba(0,0,0, 0.9);
-    overflow-x: hidden;
-    transition: 0.5s;
-}
-
-.overlay-content {
-    position: relative;
-    top: 25%;
-    width: 100%;
-    text-align: center;
-    /*margin-top: 30px;*/
-}
-
-.overlay a {
-    padding: 8px;
-    text-decoration: none;
-    font-size: 36px;
-    color: #818181;
-    display: block;
-    transition: 0.3s;
-}
-
-.overlay a:hover, .overlay a:focus {
-    color: #f1f1f1;
-}
-
-@keyframes spinner {
-  from {left: 0%; transform: rotate(0deg);}
-  to {left: 70%; transform: rotate(180deg);}
-}
-
-.overlay .closebtn {
-    position: absolute;
-    top: -50%;
-    left: 70%;
-    font-size: 60px;
-    cursor: pointer;
-    animation-name: spinner;
-    animation-duration: 1.5s;
-    animation-timing-function: ease-in;
+  display: none;
 }
 
 .mobNav{
-  display: inline-block;
-  padding: 2% 20%;
-  font-size:4em;
-  cursor:pointer;
-  color: rgba(66, 244, 197, 0.55);
-  border-bottom: 1px solid grey;
-  border-right: 1px solid grey;
-  transition: color 2s ease-out;
-}
-
-.mobNav:hover{
-  color: white;
+  display: none;
 }
 
 .desktop{
+  display: block;
+}
+
+.home {
+  margin: 0;
+  padding-top: 1px;
+  background-color: rgba(0, 0, 0, 0.8);
+  width: 100%;
+  height: 95vh;
+  color: white;
+  font-size: 2em;
+}
+
+.intro {
+  position: absolute;
+  z-index: 1;
+  height: 100%;
+  width: 100%;
+  top: 7%;
+  left: 0;
+}
+
+.des {
+  margin-top: 15%;
+  margin-left: 2%;
+  animation-name: fade;
+  animation-duration: 2s;
+  animation-timing-function: ease;
+  font-family: 'PT Sans', sans-serif;
+}
+
+.dev {
+  padding-left: 12%;
+  animation-name: fade;
+  animation-duration: 2.5s;
+  animation-timing-function: ease;
+  font-family: 'PT Sans', sans-serif;
+}
+
+.compsci {
+  padding-left: 25%;
+  animation-name: fade;
+  animation-duration: 3s;
+  animation-timing-function: ease;
+  font-family: 'PT Sans', sans-serif;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+    transform: translate(-100%, 0);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0%, 0);
+  }
+
+}
+
+.scroll {
+  text-align: center;
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  z-index: 2;
+  animation-name: scrldw;
+  animation-duration: 2s;
+  animation-timing-function: ease;
+}
+
+@keyframes scrldw {
+  0% {
+    opacity: 0;
+    transform: translate(0, -20%);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0, 0%);
+  }
+}
+
+.home a {
+  text-align: center;
+  color: white;
+  text-decoration: none;
+  style: none;
+  font-family: 'PT Sans', sans-serif;
+}
+
+.home a:hover, a:active {
+  background: none;
+  animation-iteration-count: infinite;
+}
+
+#about {
+  padding-top: 3%;
+  text-align: center;
+  padding-bottom: 5%;
+  background-color: rgba(0, 0, 0, 0.75);
+}
+
+.prof {
+  border-radius: 50%;
+  padding: 5%;
+}
+
+.abtme {
+  width: 40%;
+  margin: auto;
+  padding: 1%;
+  border: 1px solid rgba(203, 172, 98, 0.4);
+  border-radius: 0.5%;
+}
+
+.abtme h1 {
+  font-size: 2em;
+  font-family: 'PT Sans', sans-serif;
+  color: white;
+}
+
+.abtme p {
+  font-size: 1.25em;
+  font-family: 'PT Sans', sans-serif;
+  color: white;
+}
+
+#portfolio {
+  height: 90vh;
+  position: relative;
+  background-color: white;
+  padding-top: 1px;
+  padding-bottom: 5%;
+}
+
+.mySlides {
   display: none;
+  margin: auto;
+  width: 60%;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: black;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+#cv {
+  position: relative;
+  height: 100vh;
+  display: block;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 5%;
+  margin:auto;
+}
+
+.me {
+  margin: auto;
+  width: 30%;
+  margin: 1%;
+  padding: 1%;
+  float: left;
+  background: white;
+  box-shadow: 3px 5px 15px #888888;
+  display: inline-block;
+  box-sizing: border-box;
+  font-family: 'PT Sans', sans-serif;
+}
+
+.exp {
+  width: 65%;
+  margin: 1%;
+  padding-left: 1%;
+  padding-right: 1%;
+  float: right;
+  background: white;
+  box-shadow: 3px 5px 15px #888888;
+  display: inline-block;
+  box-sizing: border-box;
+  font-family: 'PT Sans', sans-serif;
+}
+
+hr {
+  border: 0;
+  border-top: 1px solid rgba(203, 172, 98, 0.3)
+}
+
+#contact {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+}
+
+#map {
+  width: 100%;
+  height: auto;
+  position: relative;
+  overflow:hidden;
 }
 
 /*First breakpoint  (Medium/ Tablet size size) */
@@ -191,10 +366,19 @@ ul{
     overflow: hidden;
   }
 
+  nav {
+    margin: auto;
+    width: 100%;
+    clear: both;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+
   ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
+    width: 100%;
   }
 
   li {
@@ -216,9 +400,13 @@ ul{
     background: grey;
   }
 
-  .hero {
-    width: 100%;
-    background-color: rgba(30, 30, 30, 0.5);
+  .logo {
+    display: inline-block;
+    white-space: nowrap;
+    padding: 1px;
+    float: right;
+    opacity: 0.8;
+    overflow: hidden;
   }
 
   .profile {
@@ -236,15 +424,6 @@ ul{
 
   .desktop{
     display: block;
-  }
-
-  .logo {
-    display: inline;
-    white-space: nowrap;
-    margin: 0;
-    padding: 1px;
-    float: right;
-    opacity: 0.8;
   }
 
   .home {
@@ -265,7 +444,6 @@ ul{
     top: 7%;
     left: 0;
   }
-
 
   .des {
     margin-top: 15%;
@@ -372,6 +550,7 @@ ul{
   }
 
   #portfolio {
+    height: 90vh;
     position: relative;
     background-color: white;
     padding-top: 1px;
@@ -385,27 +564,80 @@ ul{
   }
 
   .prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  margin-top: -22px;
-  padding: 16px;
-  color: black;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-}
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: black;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+  }
 
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
 
-.prev:hover, .next:hover {
-  background-color: rgba(255, 255, 255, 0.8);
-}
+  .prev:hover, .next:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+  }
+
+  #cv {
+    position: relative;
+    height: 100vh;
+    display: block;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 5%;
+    margin:auto;
+  }
+
+  .me {
+    margin: auto;
+    width: 30%;
+    margin: 1%;
+    padding: 1%;
+    float: left;
+    background: white;
+    box-shadow: 3px 5px 15px #888888;
+    display: inline-block;
+    box-sizing: border-box;
+    font-family: 'PT Sans', sans-serif;
+  }
+
+  .exp {
+    width: 65%;
+    margin: 1%;
+    padding-left: 1%;
+    padding-right: 1%;
+    float: right;
+    background: white;
+    box-shadow: 3px 5px 15px #888888;
+    display: inline-block;
+    box-sizing: border-box;
+    font-family: 'PT Sans', sans-serif;
+  }
+
+  hr {
+    border: 0;
+    border-top: 1px solid rgba(203, 172, 98, 0.3)
+  }
+
+  #contact {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+  }
+
+  #map {
+    width: 100%;
+    height: auto;
+    position: relative;
+    overflow:hidden;
+  }
 
 }
 /*End of second breakpoint */

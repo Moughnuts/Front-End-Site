@@ -31,4 +31,10 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";
 }
 
-document.getElementById('plusSlides(n)').addEventListener('click', plusSlides);
+var map;
+      function initMap() {
+        map = new google.maps.Map(document.getElementById('map'), {
+          center: {lat: 52.636878, lng: -1.139759},
+          zoom: 8
+        });
+      }
