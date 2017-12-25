@@ -81,23 +81,6 @@ li a:hover, a:active {
   overflow: hidden;
 }
 
-/* .profile {
-  display: inline;
-  margin: 15% 0;
-}
-
-.overlay {
-  display: none;
-}
-
-.mobNav{
-  display: none;
-} */
-
-.desktop{
-  display: block;
-}
-
 .home {
   margin: 0;
   padding-top: 1px;
@@ -124,6 +107,7 @@ li a:hover, a:active {
   animation-duration: 2s;
   animation-timing-function: ease;
   font-family: 'PT Sans', sans-serif;
+  font-size: 1em;
 }
 
 .dev {
@@ -132,6 +116,7 @@ li a:hover, a:active {
   animation-duration: 2.5s;
   animation-timing-function: ease;
   font-family: 'PT Sans', sans-serif;
+  font-size: 1em;
 }
 
 .compsci {
@@ -140,6 +125,7 @@ li a:hover, a:active {
   animation-duration: 3s;
   animation-timing-function: ease;
   font-family: 'PT Sans', sans-serif;
+  font-size: 1em;
 }
 
 @keyframes fade {
@@ -158,7 +144,7 @@ li a:hover, a:active {
   text-align: center;
   position: absolute;
   bottom: 10px;
-  left: 50%;
+  left: 40%;
   z-index: 2;
   animation-name: scrldw;
   animation-duration: 2s;
@@ -199,10 +185,12 @@ li a:hover, a:active {
 .prof {
   border-radius: 50%;
   padding: 5%;
+  height: 20%;
+  width: 20%;
 }
 
 .abtme {
-  width: 40%;
+  width: 80%;
   margin: auto;
   padding: 1%;
   border: 1px solid rgba(203, 172, 98, 0.4);
@@ -222,17 +210,35 @@ li a:hover, a:active {
 }
 
 #portfolio {
-  height: 90vh;
+  height: 100vh;
   position: relative;
   background-color: white;
   padding-top: 1px;
   padding-bottom: 5%;
 }
 
+#portfolio h1 {
+  font-size: 2em;
+  font-family: 'PT Sans', sans-serif;
+  text-align: center;
+}
+
+#portfolio p {
+  font-size: 1em;
+  font-family: 'PT Sans', sans-serif;
+  text-align: center;
+}
+
 .mySlides {
   display: none;
   margin: auto;
   width: 60%;
+}
+
+.slideimg {
+  width: 100%;
+  height: 100%;
+  box-shadow: 3px 5px 15px #888888;
 }
 
 .prev, .next {
@@ -260,19 +266,25 @@ li a:hover, a:active {
 
 #cv {
   position: relative;
-  height: 100vh;
   display: block;
   background-color: rgba(255, 255, 255, 0.8);
   padding: 5%;
   margin:auto;
 }
 
+.cprof {
+  border-radius: 50%;
+  padding: 5%;
+  height: 50%;
+  width: 50%;
+  margin-left: 15%;
+}
+
 .me {
   margin: auto;
-  width: 30%;
+  width: 95%;
   margin: 1%;
-  padding: 1%;
-  float: left;
+  padding: 2%;
   background: white;
   box-shadow: 3px 5px 15px #888888;
   display: inline-block;
@@ -281,11 +293,9 @@ li a:hover, a:active {
 }
 
 .exp {
-  width: 65%;
+  width: 95%;
   margin: 1%;
-  padding-left: 1%;
-  padding-right: 1%;
-  float: right;
+  padding: 2%;
   background: white;
   box-shadow: 3px 5px 15px #888888;
   display: inline-block;
@@ -366,26 +376,23 @@ hr {
     background: grey;
   }
 
-  .hero{
-    width: 100%;
-    background-color: rgba(30, 30, 30, 0.5);
+  .abtme {
+    width: 70%;
+    padding: 2%;
+    border: 1px solid rgba(203, 172, 98, 0.4);
+    border-radius: 0.5%;
   }
 
-  .profile{
-    display: inline;
-    margin: 15% 0;
+  .abtme h1 {
+    font-size: 4em;
+    font-family: 'PT Sans', sans-serif;
+    color: white;
   }
 
-  .overlay{
-    display: none;
-  }
-
-  .mobNav{
-    display: none;
-  }
-
-  .desktop{
-    display: block;
+  .abtme p {
+    font-size: 2.5em;
+    font-family: 'PT Sans', sans-serif;
+    color: white;
   }
 
 }
