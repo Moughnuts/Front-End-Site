@@ -241,6 +241,10 @@ li a:hover, a:active {
   box-shadow: 3px 5px 15px #888888;
 }
 
+.ghub {
+  padding-left: 35%;
+}
+
 .prev, .next {
   cursor: pointer;
   position: absolute;
@@ -265,11 +269,10 @@ li a:hover, a:active {
 }
 
 #cv {
-  position: relative;
-  display: block;
   background-color: rgba(255, 255, 255, 0.8);
   padding: 5%;
   margin:auto;
+  height: 100%;
 }
 
 .cprof {
@@ -467,18 +470,6 @@ hr {
     margin: 15% 0;
   }
 
-  .overlay {
-    display: none;
-  }
-
-  .mobNav{
-    display: none;
-  }
-
-  .desktop{
-    display: block;
-  }
-
   .home {
     margin: 0;
     padding-top: 1px;
@@ -494,17 +485,16 @@ hr {
     z-index: 1;
     height: 100%;
     width: 100%;
-    top: 7%;
-    left: 0;
   }
 
   .des {
-    margin-top: 15%;
+    margin-top: 12%;
     margin-left: 2%;
     animation-name: fade;
     animation-duration: 2s;
     animation-timing-function: ease;
     font-family: 'PT Sans', sans-serif;
+    font-size: 1.5em;
   }
 
   .dev {
@@ -513,6 +503,7 @@ hr {
     animation-duration: 2.5s;
     animation-timing-function: ease;
     font-family: 'PT Sans', sans-serif;
+    font-size: 1.5em;
   }
 
   .compsci {
@@ -521,6 +512,7 @@ hr {
     animation-duration: 3s;
     animation-timing-function: ease;
     font-family: 'PT Sans', sans-serif;
+    font-size: 1.5em;
   }
 
   @keyframes fade {
@@ -583,7 +575,7 @@ hr {
   }
 
   .abtme {
-    width: 40%;
+    width: 50%;
     margin: auto;
     padding: 1%;
     border: 1px solid rgba(203, 172, 98, 0.4);
@@ -603,7 +595,7 @@ hr {
   }
 
   #portfolio {
-    height: 90vh;
+    height: 100%;
     position: relative;
     background-color: white;
     padding-top: 1px;
@@ -640,11 +632,9 @@ hr {
   }
 
   #cv {
-    position: relative;
-    height: 100vh;
-    display: block;
+    height: 100%;
     background-color: rgba(255, 255, 255, 0.8);
-    padding: 5%;
+    padding: 3%, ;
     margin:auto;
   }
 
