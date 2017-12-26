@@ -81,7 +81,7 @@ li a:hover, a:active {
   overflow: hidden;
 }
 
-.home {
+#home {
   margin: 0;
   padding-top: 1px;
   background-color: rgba(0, 0, 0, 0.8);
@@ -162,7 +162,7 @@ li a:hover, a:active {
   }
 }
 
-.home a {
+#home a {
   text-align: center;
   color: white;
   text-decoration: none;
@@ -170,7 +170,7 @@ li a:hover, a:active {
   font-family: 'PT Sans', sans-serif;
 }
 
-.home a:hover, a:active {
+#home a:hover, a:active {
   background: none;
   animation-iteration-count: infinite;
 }
@@ -242,7 +242,7 @@ li a:hover, a:active {
 }
 
 .ghub {
-  padding-left: 35%;
+  padding-left: 25%;
 }
 
 .prev, .next {
@@ -269,10 +269,11 @@ li a:hover, a:active {
 }
 
 #cv {
+  width: 100%;
   background-color: rgba(255, 255, 255, 0.8);
-  padding: 5%;
   margin:auto;
-  height: 100%;
+  padding-top: 2%;
+  padding-bottom: 2%;
 }
 
 .cprof {
@@ -287,6 +288,7 @@ li a:hover, a:active {
   margin: auto;
   width: 95%;
   margin: 1%;
+  margin-left: 3%;
   padding: 2%;
   background: white;
   box-shadow: 3px 5px 15px #888888;
@@ -298,6 +300,7 @@ li a:hover, a:active {
 .exp {
   width: 95%;
   margin: 1%;
+  margin-left: 3%;
   padding: 2%;
   background: white;
   box-shadow: 3px 5px 15px #888888;
@@ -470,7 +473,7 @@ hr {
     margin: 15% 0;
   }
 
-  .home {
+  #home {
     margin: 0;
     padding-top: 1px;
     background-color: rgba(0, 0, 0, 0.8);
@@ -549,7 +552,7 @@ hr {
     }
   }
 
-  .home a {
+  #home a {
     text-align: center;
     color: white;
     text-decoration: none;
@@ -557,7 +560,7 @@ hr {
     font-family: 'PT Sans', sans-serif;
   }
 
-  .home a:hover, a:active {
+  #home a:hover, a:active {
     background: none;
     animation-iteration-count: infinite;
   }
@@ -602,6 +605,16 @@ hr {
     padding-bottom: 5%;
   }
 
+  #portfolio h1 {
+    font-size: 3em;
+    font-family: 'PT Sans', sans-serif;
+  }
+
+  #portfolio p {
+    font-size: 1.5em;
+    font-family: 'PT Sans', sans-serif;
+  }
+
   .mySlides {
     display: none;
     margin: auto;
@@ -632,16 +645,16 @@ hr {
   }
 
   #cv {
-    height: 100%;
+    height: 100vh;
+    padding-top: 5%;
+    padding-bottom: 40%;
     background-color: rgba(255, 255, 255, 0.8);
-    padding: 3%, ;
     margin:auto;
   }
 
   .me {
-    margin: auto;
     width: 30%;
-    margin: 1%;
+    margin-left: 3%;
     padding: 1%;
     float: left;
     background: white;
@@ -652,10 +665,10 @@ hr {
   }
 
   .exp {
-    width: 65%;
-    margin: 1%;
-    padding-left: 1%;
-    padding-right: 1%;
+    width: 60%;
+    margin-right: 2%;
+    padding-left: 2%;
+    padding-right: 2%;
     float: right;
     background: white;
     box-shadow: 3px 5px 15px #888888;
@@ -671,8 +684,18 @@ hr {
 
   #contact {
     position: relative;
-    height: 100vh;
+    height: 100%;
     width: 100%;
+    margin: auto;
+    padding-top: 1px;
+    padding-bottom: 2%;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+
+  #contact h2 {
+    font-size: 3em;
+    text-align: center;
+    font-family: 'PT Sans', sans-serif;
   }
 
   #map {
@@ -681,6 +704,50 @@ hr {
     position: relative;
     overflow:hidden;
   }
+
+  .contform {
+    padding: 2%;
+    border: 1px solid rgba(203, 172, 98, 0.4);
+    margin: auto;
+    width: 60%;
+  }
+
+  label {
+    font-size: 1.5em;
+    font-family: 'PT Sans', sans-serif;
+  }
+
+  /* Style inputs with type="text", select elements and textareas */
+  input[type=text], select, textarea {
+      width: 100%; /* Full width */
+      padding: 12px; /* Some padding */
+      border: 1px solid #ccc; /* Gray border */
+      border-radius: 4px; /* Rounded borders */
+      box-sizing: border-box; /* Make sure that padding and width stays in place */
+      margin-top: 6px; /* Add a top margin */
+      margin-bottom: 16px; /* Bottom margin */
+      resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+      font-size: 1.5em;
+      font-family: 'PT Sans', sans-serif;
+    }
+
+/* Style the submit button with a specific background color etc */
+  input[type=submit] {
+      background-color: #4CAF50;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 1.5em;
+      font-family: 'PT Sans', sans-serif;
+    }
+
+/* When moving the mouse over the submit button, add a darker green color */
+  input[type=submit]:hover {
+      background-color: #45a049;
+  }
+
 
 }
 /*End of second breakpoint */

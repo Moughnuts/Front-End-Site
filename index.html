@@ -19,10 +19,10 @@
       <nav id="mobile">
         <ul class="mnav">
           <li><a id="close" href="#"><i class="fas fa-times"></i></a></li>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Portfolio</a></li>
-          <li><a href="#">Online CV</a></li>
-          <li><a href="#">Contact</a> </li>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#cv">Online CV</a></li>
+          <li><a href="#contact">Contact</a> </li>
         </ul>
       </nav>
       <a href="#"> <img class="logo" src="images/logo1.png" alt="Page Logo"></a>
@@ -31,7 +31,7 @@
 
     <main>
 
-        <section class="home">
+        <section id="home">
           <div id="particles-js"></div>
           <div class="intro">
             <h1 class="des">Designer /</h1>
@@ -119,7 +119,7 @@
 
         </section>
 
-        <div id="cv">
+        <section id="cv">
           <div class="me">
             <img class="cprof" src="images/prof.png" alt="Mo Profile Pic">
             <h2>Muraz Maudarbux</h2>
@@ -143,6 +143,9 @@
 
             <h2>Languages</h2>
 
+            <h3>English</h3>
+            <h3>Mauritian Creole</h3>
+
           </div>
 
           <div class="exp">
@@ -154,11 +157,22 @@
             <i class="fas fa-car"></i>
             <p>August 2016 - september 2017</p>
 
+            <p>From August of 2016, I began a work placement for a division of
+              of General Motors in the UK, Vauxhall Motors. I worked as part of the
+              OnStar team, helping to bring the newly improved OnStar web app and features
+              to the UK. My main roles involved Tetsing of new hardware and software, as
+              well as helping to maintain user cases. </p>
+
             <hr>
 
             <h2>Code Student Accomodation</h2>
             <i class="far fa-building"></i>
-            <p>2014</p>
+            <p>May - September 2014</p>
+            <p> As part of the Code Student Accomodation team, I worked as an Online
+              Chatter, Providng customer service to current tennants, as well as new
+              potential tenenats. I dealt with online inquiries from both ends. Another
+              crucial part of the role was to help with the collection and logging of tenenat
+              post and deliveries.</p>
 
           </div>
 
@@ -168,6 +182,10 @@
             <h2>De Montfor University - Undergraduate Degree</h2>
             <i class="fas fa-university"></i>
             <p>September 2014 - Present (graduating 2018) </p>
+
+            <p>Currently Studying my final year of computer science.
+              Sandwhich course of 4 years, with the 3rd year in placement at then
+              General Motors division Vauxhall Motors. </p>
 
             <hr>
 
@@ -180,12 +198,24 @@
 
           </div>
 
-        </div>
+        </section>
 
         <section id="contact">
           <h2>Location</h2>
 
           <div id="map"></div>
+
+          <div class="contform">
+            <h2>Contact Me!</h2>
+            <hr>
+            <form id="get-name" action="#" method="post">
+              <label for="user-name">Enter name:</label>
+              <input type="text" id="user-name" placeholder="Your name">
+              <label for="subject">Subject</label>
+              <textarea name="subject" placeholder="enter your message here" rows="8" cols="80"></textarea>
+              <input type="submit">
+            </form>
+          </div>
 
 
         </section>
