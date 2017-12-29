@@ -36,7 +36,7 @@ nav {
 .show {
   display: block;
   height: 100%;
-  width: 100;
+  width: 100%;
   position: fixed;
   z-index: 100;
   top: 0;
@@ -195,7 +195,6 @@ li a:hover, a:active {
   text-align: center;
   color: white;
   text-decoration: none;
-  style: none;
   font-family: 'PT Sans', sans-serif;
 }
 
