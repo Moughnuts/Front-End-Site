@@ -1,9 +1,15 @@
 /* CSS global style for Desktop, and Mobile first */
+/**************************************************
+*
+* This is the section of the CSS that focuses on
+* global styles as well as mobile first design.
+*
+*
+***************************************************/
 body {
   margin: 0;
   padding: 0;
   background: linear-gradient(to right, #fc354c, #0abfbc);
-  /* background-size: 600% 600%; */
 }
 
 header {
@@ -74,7 +80,7 @@ li a {
 }
 
 li a:hover, a:active {
-  background: black;
+  background: rgba(0, 0, 0, 0.5);
 }
 
 .logo {
@@ -84,6 +90,24 @@ li a:hover, a:active {
   float: right;
   opacity: 0.8;
   overflow: hidden;
+  cursor: pointer;
+}
+
+.socials {
+  width: 100%;
+  height: 10vh;
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.socials li {
+  border: none;
+  font-size: 1em;
+  width: 33%;
+}
+
+.socials li a {
+  color: rgb(203, 172, 98);
+
 }
 
 #home {
@@ -235,6 +259,16 @@ li a:hover, a:active {
   width: 80%;
 }
 
+.mySlides a {
+  text-decoration: none;
+  color: black;
+}
+
+.mySlides a:active {
+  text-decoration: none;
+  background: none;
+}
+
 .slideimg {
   width: 60%;
   height: 60%;
@@ -271,10 +305,25 @@ li a:hover, a:active {
 
 #cv {
   width: 100%;
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(255, 255, 255, 0.7);
   margin:auto;
   padding-top: 2%;
   padding-bottom: 2%;
+}
+
+table {
+  margin: auto;
+}
+
+th {
+  width: 30%;
+  padding: 1%;
+  border: 1px solid rgba(203, 172, 98, 0.2);
+  font-family: 'PT Sans', sans-serif;
+}
+
+.icocol {
+  color: rgba(203, 172, 98, 1);
 }
 
 .cprof {
@@ -391,7 +440,26 @@ input[type=submit]:hover {
   display: none;
 }
 
+.socials li {
+  border: none;
+  font-size: 1em;
+  width: 33%;
+}
+
+.socials li a {
+  color: rgb(203, 172, 98);
+  padding: 7%;
+}
+
 /*First breakpoint  (Medium/ Tablet size size) */
+/**************************************************
+*
+* This is the section of the CSS that focuses on
+* the first breakpoint of 500px. This is for devices
+* slightly larger than phones, to view the site better.
+*
+*
+***************************************************/
 @media screen and (min-width: 500px) {
 
   #open {
@@ -463,6 +531,14 @@ input[type=submit]:hover {
 
 
 /*Start Of second breakpoint (Desktop Size) */
+/**************************************************
+*
+* This is the section of the CSS that focuses on
+* the final breakpoint, desktop size. This is what
+* everything would look like on normal browsers.
+*
+*
+***************************************************/
 @media screen and (min-width: 1000px) {
 
   nav {
@@ -565,6 +641,21 @@ input[type=submit]:hover {
   .contform {
     padding: 2%;
     width: 60%;
+  }
+
+  .socials ul {
+    width: 100%;
+  }
+
+  .socials li {
+    border: none;
+    font-size: 1em;
+    width: 33%;
+    height: auto;
+  }
+
+  .socials li a {
+    color: rgb(203, 172, 98);
   }
 
 }
