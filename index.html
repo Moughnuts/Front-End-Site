@@ -1,5 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
+
+  <!-- Start of Head tag -->
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -8,14 +10,22 @@
 
     <script defer src="https://use.fontawesome.com/releases/v5.0.2/js/all.js"></script>
     <link rel="stylesheet" href="CSS/styles.css">
+    <link rel="icon" type="image/x-icon" href="images/Logo1.png">
     <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
 
   </head>
+  <!-- End of head tag -->
+
+  <!-- Start of body tag -->
   <body>
 
+    <!-- Start of page header. This will contain the nav for the site.  -->
     <header>
+
+      <!-- Span with Font Awesome svg, for mobile nav. -->
       <span id="open"><i class="fas fa-bars fa-5x"></i></span>
 
+      <!-- Page nav bar, made using the nav tag, and unordered List. -->
       <nav id="mobile">
         <ul class="mnav">
           <li><a id="close" href="#"><i class="fas fa-times"></i></a></li>
@@ -25,214 +35,265 @@
           <li><a href="#contact">Contact</a> </li>
         </ul>
       </nav>
+
+      <!-- Site logo (temp) which links to a social media tab. -->
       <a href="#"> <img class="logo" src="images/Logo1.png" alt="Page Logo"></a>
 
     </header>
+    <!-- End of header tag. -->
 
+    <!-- Start of the main section for the webpage. -->
     <main>
 
-        <section id="home">
-          <div id="particles-js"></div>
-          <div class="intro">
-            <h1 class="des">Designer /</h1>
-            <h1 class="dev">Developer /</h1>
-            <h1 class="compsci">Computer Scientist.</h1>
-          </div>
-          <div class="scroll">
-            <a href="#about">
-              <i class="fas fa-angle-down"></i> <br>
-              <span> Scroll </span>
-            </a>
-          </div>
+      <!-- Start of the Home section -->
+      <section id="home">
+        <!-- This div contains the particle effect for the section BG. -->
+        <div id="particles-js"></div>
 
-          <script src="scripts/particles.js-master/particles.js"></script>
-          <script src="scripts/particles.js-master/demo/js/app.js"></script>
+        <!-- This div contains the intro text, that flies on screen on page load. -->
+        <div class="intro">
+          <h1 class="des">Designer /</h1>
+          <h1 class="dev">Developer /</h1>
+          <h1 class="compsci">Computer Scientist.</h1>
+        </div>
 
-        </section>
+        <!-- This div contains the scroll button, and link to the 'about' section. -->
+        <div class="scroll">
+          <a href="#about">
+            <i class="fas fa-angle-down"></i> <br>
+            <span> Scroll </span>
+          </a>
+        </div>
 
-        <section id="about">
-          <img class="prof" src="images/prof.png" alt="Mo Profile Pic">
-          <article class="abtme">
-            <h1>About Me!</h1>
+        <!-- These scripts are used to call the javascript that controls the particle effect. -->
+        <script src="scripts/particles.js-master/particles.js"></script>
+        <script src="scripts/particles.js-master/demo/js/app.js"></script>
 
-            <p>Hello and welcome to my portfolio website! My (legal) name is Muraz
-              Maudarbux, but I mostly go by Mo. This site was initally created
-              as part of my final year 'Front End Web Development' assignment,
-              and I decided that this would be a great opportunity to create a
-              great portfolio website, to showcase all my work, interests and
-              creative style.</p>
+      </section>
+      <!-- End of Home section. -->
 
-            <p>I'm currently a final year student studying at Computer Science at
-              De Montfort University. This website will be used as an assignment
-              for one of my final year modules, but I hope to continue using this
-              site in the future, and develop and change it as I Design, Develop
-              and get more experience in the industry. I also hope to update the
-              site as industry standards change to keep up with the world of web
-              Design.</p>
+      <!-- Start of about section -->
+      <section id="about">
+        <!-- Image of my profile picture. -->
+        <img class="prof" src="images/prof.png" alt="Mo Profile Pic">
 
-            <p>The menu above will take you to the other pages of this one page
-              site, that changes the content with JS. You'll be able to view my
-              work as well as my CV and links to my social media such as Facebook,
-              Twitter, Linked In, and even a link to my GitHub repositories! (Hint
-              these can be found by clicking the logo, top right ;P ).</p>
+        <!-- Article containing the introductory about me and webpage information.  -->
+        <article class="abtme">
+          <h1>About Me!</h1>
 
-            <p>I hope you enjoy the site, and if you have any queries (Or job offers)
-              feel free to contact me through the contact form!</p>
-          </article>
+          <p>Hello and welcome to my portfolio website! My (legal) name is Muraz
+            Maudarbux, but I mostly go by Mo. This site was initally created
+            as part of my final year 'Front End Web Development' assignment,
+            and I decided that this would be a great opportunity to create a
+            great portfolio website, to showcase all my work, interests and
+            creative style.</p>
 
-        </section>
+          <p>I'm currently a final year student studying at Computer Science at
+            De Montfort University. This website will be used as an assignment
+            for one of my final year modules, but I hope to continue using this
+            site in the future, and develop and change it as I Design, Develop
+            and get more experience in the industry. I also hope to update the
+            site as industry standards change to keep up with the world of web
+            Design.</p>
 
-        <section id="portfolio">
-          <h1>Portfolio</h1>
-          <p>Heres a small showcase of some of the works i've done.</p>
+          <p>The menu above will take you to the other pages of this one page
+            site, that changes the content with JS. You'll be able to view my
+            work as well as my CV and links to my social media such as Facebook,
+            Twitter, Linked In, and even a link to my GitHub repositories! (Hint
+            these can be found by clicking the logo, top right ;P ).</p>
+
+          <p>I hope you enjoy the site, and if you have any queries (Or job offers)
+            feel free to contact me through the contact form!</p>
+        </article>
+        <!-- End of about me article -->
+
+      </section>
+      <!-- End of about me section. -->
+
+      <!-- Start of the portfolio section. -->
+      <section id="portfolio">
+        <!-- Header and subtitle text to introduce this section. -->
+        <h1>Portfolio</h1>
+        <p>Heres a small showcase of some of the works i've done.</p>
+
+        <hr>
+
+        <!-- Div containing the image for one my Blog template. -->
+        <div class="mySlides">
+          <img class="slideimg" src="images/rsz_mblog.png" alt="Blog Draft">
+          <p>This is a draft i created in photoshop for blog idea I came up with.
+            This is only and inital rough markup, and hasn't progressed much beyond
+            the intial concept.</p>
+        </div>
+
+        <!-- Div containing draft of completed web app for General Motors -->
+        <div class="mySlides">
+          <img class="slideimg" src="images/rsz_gccx.png" alt="OnStar Site">
+          <p>This is a draft of what ended up being a completed web app for General
+            Motors, OnStar team. Whilst working for GM on my placement year, I
+            was tasked with createing a web based app, as a communication platform
+            for the local team. The application was completed, but all rights belong
+            to GM. Becuase of certain laws, some of the image had to be covered up,
+            and I sadly can't produce the original code, but this draft shows what
+            the application would eventuially become.</p>
+        </div>
+
+        <!-- Div containing a Font Awesome Github SVG that links to my GitHub -->
+        <div class="mySlides fade">
+          <i class="fab fa-github fa-10x ghub"> </i>
+          <p>Other than HTML and CSS and some JS, as part of my Computer Science
+          course, I have been exposed to many different programming languages and styles.
+          Available on my GitHub are examples of my work with C, Java (functional and OO),
+          SQL and PHP to name a few. Click on the image to check it out! </p>
+        </div>
+
+        <!-- a tages that control the scrolling between portfolio objects. -->
+        <a class="prev" onlcick="plusSlides(-1)">&#10094; </a>
+        <a class="next" onclick="plusSlides(1)">&#10095; </a>
+
+      </section>
+      <!-- End of the portfolio section. -->
+
+      <!-- Start of the CV section. -->
+      <section id="cv">
+        <!-- Div containing all the general information about me. -->
+        <div class="me">
+          <img class="cprof" src="images/prof.png" alt="Mo Profile Pic">
+          <h2>Muraz Maudarbux</h2>
+          <p>Welcome to my CV page. Here you'll be able to see all my experiences
+            as well as education history and skills. If you would like to get in
+            contact with me, feel free to hit the contact button and send me a message!</p>
 
           <hr>
 
-          <div class="mySlides">
-            <img class="slideimg" src="images/rsz_mblog.png" alt="Blog Draft">
-            <p>This is a draft i created in photoshop for blog idea I came up with.
-              This is only and inital rough markup, and hasn't progressed much beyond
-              the intial concept.</p>
-          </div>
+          <!-- Table to hold my skills. -->
+          <h2>Skills</h2>
+          <table>
+            <tr>
+              <th></th>
+              <th></th>
+              <th></th>
+            </tr>
+            <tr>
+              <th></th>
+              <th></th>
+              <th></th>
+            </tr>
+          </table>
 
-          <div class="mySlides">
-            <img class="slideimg" src="images/rsz_gccx.png" alt="OnStar Site">
-            <p>This is a draft of what ended up being a completed web app for General
-              Motors, OnStar team. Whilst working for GM on my placement year, I
-              was tasked with createing a web based app, as a communication platform
-              for the local team. The application was completed, but all rights belong
-              to GM. Becuase of certain laws, some of the image had to be covered up,
-              and I sadly can't produce the original code, but this draft shows what
-              the application would eventuially become.</p>
-          </div>
+          <hr>
 
-          <div class="mySlides fade">
-            <i class="fab fa-github fa-10x ghub"> </i>
-            <p>Other than HTML and CSS and some JS, as part of my Computer Science
-            course, I have been exposed to many different programming languages and styles.
-            Available on my GitHub are examples of my work with C, Java (functional and OO),
-            SQL and PHP to name a few. Click on the image to check it out! </p>
-          </div>
+          <!-- Language section of the page,  -->
+          <h2>Languages</h2>
 
-          <a class="prev" onlcick="plusSlides(-1)">&#10094; </a>
-          <a class="next" onclick="plusSlides(1)">&#10095; </a>
+          <h3>English</h3>
+          <h3>Mauritian Creole</h3>
 
-        </section>
+        </div>
+        <!-- End of general CV information div. -->
 
-        <section id="cv">
-          <div class="me">
-            <img class="cprof" src="images/prof.png" alt="Mo Profile Pic">
-            <h2>Muraz Maudarbux</h2>
-            <p>Welcome to my CV page. Here you'll be able to see all my experiences
-              as well as education history and skills. If you would like to get in
-              contact with me, feel free to hit the contact button and send me a message!</p>
+        <!-- Div containing past work experiences. -->
+        <div class="exp">
+          <h1>Work Experience</h1>
 
-            <h2>Skills</h2>
-            <table>
-              <tr>
-                <th></th>
-                <th></th>
-                <th></th>
-              </tr>
-              <tr>
-                <th></th>
-                <th></th>
-                <th></th>
-              </tr>
-            </table>
+          <hr>
 
-            <h2>Languages</h2>
+          <h2>General Motors</h2>
+          <i class="fas fa-car"></i>
+          <p>August 2016 - september 2017</p>
 
-            <h3>English</h3>
-            <h3>Mauritian Creole</h3>
+          <p>From August of 2016, I began a work placement for a division of
+            of General Motors in the UK, Vauxhall Motors. I worked as part of the
+            OnStar team, helping to bring the newly improved OnStar web app and features
+            to the UK. My main roles involved Tetsing of new hardware and software, as
+            well as helping to maintain user cases. </p>
 
-          </div>
+          <hr>
 
-          <div class="exp">
-            <h1>Work Experience</h1>
+          <h2>Code Student Accomodation</h2>
+          <i class="far fa-building"></i>
+          <p>May - September 2014</p>
+          <p> As part of the Code Student Accomodation team, I worked as an Online
+            Chatter, Providng customer service to current tennants, as well as new
+            potential tenenats. I dealt with online inquiries from both ends. Another
+            crucial part of the role was to help with the collection and logging of tenenat
+            post and deliveries.</p>
 
+        </div>
+        <!-- End of work expereince Div. -->
+
+        <!-- Div containg all of my education information. -->
+        <div class="exp">
+          <h1>Education</h1>
+
+          <h2>De Montfor University - Undergraduate Degree</h2>
+          <i class="fas fa-university"></i>
+          <p>September 2014 - Present (graduating 2018) </p>
+
+          <p>Currently Studying my final year of computer science.
+            Sandwhich course of 4 years, with the 3rd year in placement at then
+            General Motors division Vauxhall Motors. </p>
+
+          <hr>
+
+          <h2>Corby Businesses Academy</h2>
+          <h3>A/AS Level</h3>
+          <p>September 2011 - July 2014</p>
+
+          <h3>GCSE</h3>
+          <p>September 2009 - July 2011</p>
+
+        </div>
+        <!-- End of Education Div. -->
+
+      </section>
+      <!-- End of CV section. -->
+
+      <!-- Start of contact section. -->
+      <section id="contact">
+        <h2>Location</h2>
+
+        <!-- Div containing the Google maps api. -->
+        <div id="map"></div>
+
+        <!-- Div containing a contact form. -->
+        <div class="contform">
+          <h2>Contact Me!</h2>
+          <hr>
+          <!-- Form for user input, currently no actions are set to the form -->
+          <form id="get-name" action="#" method="post">
+            <label for="user-name">Enter name:</label>
+            <input type="text" id="user-name" placeholder="Your name">
+            <label for="subject">Subject</label>
+            <textarea name="subject" placeholder="enter your message here" rows="8" cols="80"></textarea>
+            <input type="submit">
+          </form>
+          <!-- End of form. -->
+
+          <!-- Div that contains the greeting message for users who fill out and submit the form. -->
+          <div id="greeting">
             <hr>
-
-            <h2>General Motors</h2>
-            <i class="fas fa-car"></i>
-            <p>August 2016 - september 2017</p>
-
-            <p>From August of 2016, I began a work placement for a division of
-              of General Motors in the UK, Vauxhall Motors. I worked as part of the
-              OnStar team, helping to bring the newly improved OnStar web app and features
-              to the UK. My main roles involved Tetsing of new hardware and software, as
-              well as helping to maintain user cases. </p>
-
-            <hr>
-
-            <h2>Code Student Accomodation</h2>
-            <i class="far fa-building"></i>
-            <p>May - September 2014</p>
-            <p> As part of the Code Student Accomodation team, I worked as an Online
-              Chatter, Providng customer service to current tennants, as well as new
-              potential tenenats. I dealt with online inquiries from both ends. Another
-              crucial part of the role was to help with the collection and logging of tenenat
-              post and deliveries.</p>
-
+              <p>Dear <span id="name"> </span>, thank you for your message.
+                I hope to reply to you as soon as possible. Regards, Mo Maudarbux. </p>
           </div>
+          <!-- End of greetings div. -->
 
-          <div class="exp">
-            <h1>Education</h1>
+        </div>
+        <!-- End of contact form. -->
 
-            <h2>De Montfor University - Undergraduate Degree</h2>
-            <i class="fas fa-university"></i>
-            <p>September 2014 - Present (graduating 2018) </p>
+      </section>
+      <!-- end of contact section. -->
 
-            <p>Currently Studying my final year of computer science.
-              Sandwhich course of 4 years, with the 3rd year in placement at then
-              General Motors division Vauxhall Motors. </p>
-
-            <hr>
-
-            <h2>Corby Businesses Academy</h2>
-            <h3>A/AS Level</h3>
-            <p>September 2011 - July 2014</p>
-
-            <h3>GCSE</h3>
-            <p>September 2009 - July 2011</p>
-
-          </div>
-
-        </section>
-
-        <section id="contact">
-          <h2>Location</h2>
-
-          <div id="map"></div>
-
-          <div class="contform">
-            <h2>Contact Me!</h2>
-            <hr>
-            <form id="get-name" action="#" method="post">
-              <label for="user-name">Enter name:</label>
-              <input type="text" id="user-name" placeholder="Your name">
-              <label for="subject">Subject</label>
-              <textarea name="subject" placeholder="enter your message here" rows="8" cols="80"></textarea>
-              <input type="submit">
-            </form>
-
-            <div id="greeting">
-              <hr>
-                <p>Dear <span id="name"> </span>, thank you for your message.
-                  I hope to reply to you as soon as possible. Regards, Mo Maudarbux. </p>
-            </div>
-
-          </div>
-
-
-        </section>
-
-
-        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDp0o-KtC3pcEWY3XzvKAda1WnPYpRd_rU&callback=initMap" async defer></script>
-        <script src="scripts/script.js"></script>
+      <!-- Script tag that calls in the javascript file for the web page -->
+      <script src="scripts/script.js"></script>
+      <!-- Script tag that loads the Map JS api. -->
+      <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDp0o-KtC3pcEWY3XzvKAda1WnPYpRd_rU&callback=initMap"></script>
 
 
     </main>
+    <!-- End of webpage main section. -->
 
   </body>
+  <!-- End of body. -->
 </html>
+<!-- End of HTML. -->

@@ -1,3 +1,13 @@
+// This is the Start of my Java script File. It contains all the
+// scripts that my webpage currently needs.
+
+"use strict"; // states that the execution of JS must be strict.
+
+////////////////////////////////////////////////////////////
+//
+//  Start of the Naviagtion script for the mobile nav menu.
+//
+////////////////////////////////////////////////////////////
 let menu = document.getElementById("open");
 let nav = document.getElementById("mobile");
 let closeNav = document.getElementById("close");
@@ -24,11 +34,14 @@ function toggleback() {
   }
 }
 
+////////////////////////////////////////////////////////////
+//
+//  Start of the portfolio slideshow script.
+//
+////////////////////////////////////////////////////////////
 
 var slideIndex = 1;
 showSlides(slideIndex);
-
-// Next/previous controls
 
 function plusSlides(n) {
   showSlides(slideIndex += n);
@@ -45,13 +58,32 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";
 }
 
+/////////////////////////////////////////////////////////////
+//
+//  Start of tgoogle maps API script.
+//
+/////////////////////////////////////////////////////////////
+
 var map;
+var curloc = {lat: 52.636878, lng: -1.139759};
 function initMap() {
-  map = new google.maps.Map(document.getElementById('map'), {
-    center: {lat: 52.636878, lng: -1.139759},
+  map = new google.maps.Map(document.getElementById("map"), {
+    center: curloc,
     zoom: 8
     });
+
+    var marker = new google.maps.Marker ({
+      position: curloc,
+      map: map,
+      title: 'Leicester'
+    });
 }
+
+/////////////////////////////////////////////////////////////
+//
+//  Start of contact, user message return script.
+//
+////////////////////////////////////////////////////////////
 
 let userName = document.getElementById("user-name");
 let returnName = document.getElementById("name")
