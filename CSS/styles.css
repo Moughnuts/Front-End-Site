@@ -12,6 +12,11 @@ header {
   overflow: hidden;
 }
 
+hr {
+  border: 0;
+  border-top: 1px solid rgba(203, 172, 98, 0.3)
+}
+
 #open {
   padding: 15%;
   color: rgba(66, 244, 197, 0.55);
@@ -69,7 +74,7 @@ li a {
 }
 
 li a:hover, a:active {
-  background: grey;
+  background: black;
 }
 
 .logo {
@@ -170,11 +175,6 @@ li a:hover, a:active {
   font-family: 'PT Sans', sans-serif;
 }
 
-#home a:hover, a:active {
-  background: none;
-  animation-iteration-count: infinite;
-}
-
 #about {
   padding-top: 3%;
   text-align: center;
@@ -212,7 +212,7 @@ li a:hover, a:active {
 #portfolio {
   height: 100vh;
   position: relative;
-  background-color: white;
+  background-color: rgba(204, 204, 204, 0.9);
   padding-top: 1px;
   padding-bottom: 30%;
 }
@@ -353,7 +353,7 @@ label {
 
 /* Style inputs with type="text", select elements and textareas */
 input[type=text], select, textarea {
-    width: 100%; /* Full width */
+    width: 100%;
     padding: 12px; /* Some padding */
     border: 1px solid #ccc; /* Gray border */
     border-radius: 4px; /* Rounded borders */
@@ -412,53 +412,29 @@ input[type=submit]:hover {
 
   .mnav {
     top: 25%;
-
-  }
-
-  ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    width: 100%;
   }
 
   li {
-    float: left;
     width: 25%;
   }
 
   li a {
-    text-align: center;
-    text-decoration: none;
-    display: block;
     font-size: 1em;
-    color: white;
     padding: 11%;
     margin: 0;
-    font-family: 'PT Sans', sans-serif;
-  }
-
-  li a:hover, a:active {
-    background: grey;
   }
 
   .abtme {
     width: 70%;
     padding: 2%;
-    border: 1px solid rgba(203, 172, 98, 0.4);
-    border-radius: 0.5%;
   }
 
   .abtme h1 {
     font-size: 4em;
-    font-family: 'PT Sans', sans-serif;
-    color: white;
   }
 
   .abtme p {
     font-size: 1.75em;
-    font-family: 'PT Sans', sans-serif;
-    color: white;
   }
 
   .cprof {
@@ -471,13 +447,15 @@ input[type=submit]:hover {
 
   .contform {
     padding: 2%;
-    border: 1px solid rgba(203, 172, 98, 0.4);
-    margin: auto;
     width: 70%;
   }
 
+  .mySlides {
+    padding-top: 2%;
+  }
+
   .ghub {
-    padding-left: 40%;
+    padding-left: 35%;
   }
 }
 
@@ -487,18 +465,8 @@ input[type=submit]:hover {
 /*Start Of second breakpoint (Desktop Size) */
 @media screen and (min-width: 1000px) {
 
-  header {
-    background-color: rgba(0, 0, 0, 0.7);
-    border-bottom: 1px solid rgba(203, 172, 98, 0.3);
-    overflow: hidden;
-  }
-
   nav {
-    display: block;
     width: 60%;
-    height: auto;
-    background: none;
-    position: relative;
   }
 
   .mnav {
@@ -506,228 +474,66 @@ input[type=submit]:hover {
   }
 
   ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
     width: 60%;
   }
 
-  li {
-    float: left;
-    width: 25%;
-  }
-
   li a {
-    text-align: center;
-    text-decoration: none;
-    display: block;
-    font-size: 1em;
-    color: white;
     padding: 10%;
-    margin: 0;
-    font-family: 'PT Sans', sans-serif;
-  }
-
-  li a:hover, a:active {
-    background: grey;
-  }
-
-  .logo {
-    display: inline-block;
-    white-space: nowrap;
-    padding: 1px;
-    float: right;
-    opacity: 0.8;
-    overflow: hidden;
-  }
-
-  .profile {
-    display: inline;
-    margin: 15% 0;
-  }
-
-  #home {
-    margin: 0;
-    padding-top: 1px;
-    background-color: rgba(0, 0, 0, 0.8);
-    width: 100%;
-    height: 95vh;
-    color: white;
-    font-size: 2em;
-  }
-
-  .intro {
-    position: absolute;
-    z-index: 1;
-    height: 100%;
-    width: 100%;
   }
 
   .des {
-    margin-top: 12%;
-    margin-left: 2%;
-    animation-name: fade;
-    animation-duration: 2s;
-    animation-timing-function: ease;
-    font-family: 'PT Sans', sans-serif;
     font-size: 1.5em;
   }
 
   .dev {
-    padding-left: 12%;
-    animation-name: fade;
-    animation-duration: 2.5s;
-    animation-timing-function: ease;
-    font-family: 'PT Sans', sans-serif;
     font-size: 1.5em;
   }
 
   .compsci {
-    padding-left: 25%;
-    animation-name: fade;
-    animation-duration: 3s;
-    animation-timing-function: ease;
-    font-family: 'PT Sans', sans-serif;
     font-size: 1.5em;
   }
 
-  @keyframes fade {
-    0% {
-      opacity: 0;
-      transform: translate(-100%, 0);
-    }
-    100% {
-      opacity: 1;
-      transform: translate(0%, 0);
-    }
-
-  }
-
   .scroll {
-    text-align: center;
-    position: absolute;
-    bottom: 10px;
     left: 50%;
-    z-index: 2;
-    animation-name: scrldw;
-    animation-duration: 2s;
-    animation-timing-function: ease;
-  }
-
-  @keyframes scrldw {
-    0% {
-      opacity: 0;
-      transform: translate(0, -20%);
-    }
-    100% {
-      opacity: 1;
-      transform: translate(0, 0%);
-    }
-  }
-
-  #home a {
-    text-align: center;
-    color: white;
-    text-decoration: none;
-    style: none;
-    font-family: 'PT Sans', sans-serif;
-  }
-
-  #home a:hover, a:active {
-    background: none;
-    animation-iteration-count: infinite;
-  }
-
-  #about {
-    padding-top: 3%;
-    text-align: center;
-    padding-bottom: 5%;
-    background-color: rgba(0, 0, 0, 0.75);
-  }
-
-  .prof {
-    border-radius: 50%;
-    padding: 5%;
   }
 
   .abtme {
     width: 50%;
-    margin: auto;
     padding: 1%;
-    border: 1px solid rgba(203, 172, 98, 0.4);
-    border-radius: 0.5%;
   }
 
   .abtme h1 {
     font-size: 2em;
-    font-family: 'PT Sans', sans-serif;
-    color: white;
   }
 
   .abtme p {
     font-size: 1.25em;
-    font-family: 'PT Sans', sans-serif;
-    color: white;
   }
 
   #portfolio {
-    height: 100vh;
-    position: relative;
-    background-color: white;
-    padding-top: 1px;
     padding-bottom: 15%;
   }
 
   #portfolio h1 {
     font-size: 3em;
-    font-family: 'PT Sans', sans-serif;
   }
 
   #portfolio p {
     font-size: 1.5em;
-    font-family: 'PT Sans', sans-serif;
   }
 
   .mySlides {
-    display: none;
-    margin: auto;
     width: 60%;
-    padding-top: 2%;
   }
 
   .ghub {
     padding-top: 15%;
   }
 
-  .prev, .next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    margin-top: -22px;
-    padding: 16px;
-    color: black;
-    font-weight: bold;
-    font-size: 18px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-  }
-
-  .next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
-  }
-
-  .prev:hover, .next:hover {
-    background-color: rgba(255, 255, 255, 0.8);
-  }
-
   #cv {
     height: 100vh;
     padding-top: 5%;
-    padding-bottom: 40%;
-    background-color: rgba(255, 255, 255, 0.8);
-    margin:auto;
+    padding-bottom: 55%;
   }
 
   .me {
@@ -735,11 +541,8 @@ input[type=submit]:hover {
     margin-left: 3%;
     padding: 1%;
     float: left;
-    background: white;
-    box-shadow: 3px 5px 15px #888888;
     display: inline-block;
     box-sizing: border-box;
-    font-family: 'PT Sans', sans-serif;
   }
 
   .exp {
@@ -748,33 +551,8 @@ input[type=submit]:hover {
     padding-left: 2%;
     padding-right: 2%;
     float: right;
-    background: white;
-    box-shadow: 3px 5px 15px #888888;
     display: inline-block;
     box-sizing: border-box;
-    font-family: 'PT Sans', sans-serif;
-  }
-
-  hr {
-    border: 0;
-    border-top: 1px solid rgba(203, 172, 98, 0.3)
-  }
-
-  #contact {
-    position: relative;
-    height: 100%;
-    width: 100%;
-    margin: auto;
-    padding-top: 1px;
-    padding-bottom: 2%;
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-  }
-
-  #contact h2 {
-    font-size: 3em;
-    text-align: center;
-    font-family: 'PT Sans', sans-serif;
   }
 
   #map {
@@ -786,54 +564,7 @@ input[type=submit]:hover {
 
   .contform {
     padding: 2%;
-    border: 1px solid rgba(203, 172, 98, 0.4);
-    margin: auto;
     width: 60%;
-  }
-
-  label {
-    font-size: 1.5em;
-    font-family: 'PT Sans', sans-serif;
-  }
-
-  /* Style inputs with type="text", select elements and textareas */
-  input[type=text], select, textarea {
-      width: 100%; /* Full width */
-      padding: 12px; /* Some padding */
-      border: 1px solid #ccc; /* Gray border */
-      border-radius: 4px; /* Rounded borders */
-      box-sizing: border-box; /* Make sure that padding and width stays in place */
-      margin-top: 6px; /* Add a top margin */
-      margin-bottom: 16px; /* Bottom margin */
-      resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
-      font-size: 1.5em;
-      font-family: 'PT Sans', sans-serif;
-    }
-
-/* Style the submit button with a specific background color etc */
-  input[type=submit] {
-      background-color: #4CAF50;
-      color: white;
-      padding: 12px 20px;
-      border: none;
-      border-radius: 4px;
-      cursor: pointer;
-      font-size: 1.5em;
-      font-family: 'PT Sans', sans-serif;
-    }
-
-/* When moving the mouse over the submit button, add a darker green color */
-  input[type=submit]:hover {
-      background-color: #45a049;
-  }
-
-  #greeting {
-    padding-top: 3%;
-    margin: auto;
-    width: 80%;
-    font-size: 2em;
-    text-align: center;
-    display: none;
   }
 
 }
